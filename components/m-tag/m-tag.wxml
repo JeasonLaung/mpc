@@ -1,0 +1,4 @@
+<!--components/m-tag/m-tag.wxml-->
+<view class="m-tag {{_active ? 'active' : ''}} m-class" bindtap='handlerTap'>
+  <slot></slot>
+</view>

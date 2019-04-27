@@ -1,0 +1,22 @@
+/* pages/bb.wxss */
+.bb-button{
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+
+}
+.bb-button:after{
+  border: none;
+}
+.bb-button-active{
+  background-color: red
+}
+.bb-button{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 85rpx;
+  background-color: red;
+}

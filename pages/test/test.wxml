@@ -1,0 +1,15 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text> -->
+<m-panel wx:for="{{2}}" wx:key="index">
+  <m-tab bind:change="handlechange"/>
+</m-panel>
+
+<m-panel wx:for="{{2}}" wx:key="index" title="特殊要求">
+<view style='margin:27rpx 0 0 27rpx;padding-bottom:12rpx;border-bottom:1rpx solid #f2f2f2'>
+  <m-tag m-class="custom-tag" wx:for="{{tag_list}}" wx:key="index"  wx:for-item="item">{{item.title}}</m-tag>
+</view>
+<view style='margin:27rpx 27rpx'>
+  <textarea style='background:#f2f2f2;width:100%' value='11111111111111111111111111111我是几个那时的啊实打实大11111111111111111'></textarea>
+</view>
+
+</m-panel>

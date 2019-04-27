@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<!-- <navbar>首页</navbar>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<bb>
+  <view>132</view>
+  <view>456</view>
+</bb>
+<!-- 基础布局 -->
+<view style='display:flex;flex-direction:column;height:100%'>
+<view style='height:100rpx;background:#ddd'>123</view>
+<swiper style='display:flex;flex:1'>
+  <swiper-item style='flex:1;overflow-y:scroll'>
+  <!-- overflow:scroll -->
+    <scroll-view  scroll-y style='height:calc(100% - 100rpx)'>
+      <view wx:for="{{100}}" :key="key">
+    {{item}}
+    </view>
+    </scroll-view>
+  </swiper-item>
+
+</swiper>
+
+</view>

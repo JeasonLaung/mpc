@@ -1,0 +1,7 @@
+<!--components/m-panel/m-panel.wxml-->
+<view class="m-panel">
+  <view class="m-panel__title">
+    {{title}}
+  </view>
+  <slot/>
+</view>

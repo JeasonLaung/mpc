@@ -1,0 +1,35 @@
+/* components/navbar/index.wxss */
+@import "../../icon.wxss";
+.navbar{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#fff;
+    z-index:10;
+    width:100%;
+}
+.navbar-icon__group{
+    position:absolute;
+    bottom:0rpx;
+    margin:auto 0;
+    left:40rpx;
+    display:flex;
+    align-items:center;
+    
+}
+.navbar-icon__group_item{
+    border:1rpx solid #ddd;
+    border-right:none;
+    padding:5rpx 20rpx;
+}
+.navbar-icon__group_item:first-child{
+    border-radius:20rpx 0 0 20rpx;
+}
+.navbar-icon__group_item:nth-child(2){
+    border-radius:0 20rpx 20rpx 0;
+    border-right:1rpx solid #bbb;
+}
+.navbar-icon__group_item icon{
+    transform:translateY(-5rpx);
+}

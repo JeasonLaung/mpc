@@ -1,0 +1,26 @@
+<!--pages/navigation/index.wxml-->
+<!-- wx:if="{{show}}" -->
+<view class='navbar' style='height:{{navH+115}}rpx;' >
+<view>
+<view style="margin-top:{{navH}}rpx;" wx:if="{{!search}}"><slot>首页</slot></view>
+
+
+<view class="navbar-icon__group" style="top:{{navH}}rpx;">
+    <view class="navbar-icon__group_item" bindtap="handleBack">
+        <icon class='iconfont icon-left'></icon>
+    </view>
+
+    <view class="navbar-icon__group_item" bindtap="handleHome">
+        <icon class='iconfont icon-home'></icon>
+    </view>
+
+    <view style="width:290rpx;background-color:#eee;margin-left:20rpx;padding:10rpx 0 10rpx 20rpx;border-radius:40rpx;font-size:32rpx;color:#999" wx:if="{{search}}">
+        <icon class="iconfont icon-sousuo"></icon>搜索
+    </view>
+
+</view>
+</view>
+
+</view>
+<!-- 站位 -->
+<view style="height:{{navH+115}}rpx"></view>

@@ -1,0 +1,11 @@
+<!--components/m-tab/m-tab.wxml-->
+<view class='m-tab'>
+  <view 
+  class="m-tab__item {{index == current ? 'm-tab__item-active' : ''}}"
+  wx:for="{{3}}"
+  wx:key="index"
+  data-index="{{index}}"
+  bindtap="handlerchange">
+    {{item}}
+  </view>
+</view>

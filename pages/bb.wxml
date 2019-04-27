@@ -1,0 +1,6 @@
+<!--pages/bb.wxml-->
+<form report-submit bindsubmit="handleSubmit">
+<button class='bb-button'>
+<slot></slot>
+</button>
+</form>

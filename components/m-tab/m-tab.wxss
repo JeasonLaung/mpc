@@ -1,0 +1,43 @@
+/* components/m-tab/m-tab.wxss */
+.m-tab{
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+}
+.m-tab__item{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.m-tab__item-active{
+  background-color: #fff;
+  position: relative;
+  color: #2d8cf0;
+}
+.m-tab__item-active:before{
+  content: "";
+  position: absolute;
+  left: -35rpx;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-right: 20rpx solid #fff;
+  border-bottom: 40rpx solid #fff;
+  border-top: 40rpx solid transparent;
+  border-left: 20rpx solid transparent;
+  
+}
+.m-tab__item-active:after{
+  content: "";
+  position: absolute;
+  right: -35rpx;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-right: 20rpx solid transparent;
+  border-bottom: 40rpx solid #fff;
+  border-top: 40rpx solid transparent;
+  border-left: 20rpx solid #fff;
+}

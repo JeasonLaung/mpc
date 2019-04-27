@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "../navigation/index",
+    "bb": "../bb"
+  }
+}

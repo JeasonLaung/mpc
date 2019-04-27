@@ -1,0 +1,15 @@
+/* components/m-tag/m-tag.wxss */
+.m-tag{
+  background-color: #f2f2f2;
+  font-size: 25rpx;
+  padding: 0 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+  border-radius: 30rpx;
+
+}
+.m-tag.active{
+  background-color: #2d8cf0;
+  color: #fff;
+}
