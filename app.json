@@ -25,7 +25,10 @@
   "usingComponents": {
     "m-panel": "components/m-panel/m-panel",
     "m-tab": "components/m-tab/m-tab",
-    "m-tag": "components/m-tag/m-tag"
+    "m-tag": "components/m-tag/m-tag",
+    "m-textarea": "components/m-textarea/m-textarea",
+    "m-row": "components/m-row/m-row",
+    "m-icon": "components/m-icon/index"
   },
   "sitemapLocation": "sitemap.json"
 }

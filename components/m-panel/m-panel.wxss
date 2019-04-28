@@ -1,21 +1,35 @@
 /* components/m-panel/m-panel.wxss */
 .m-panel{
-  padding-bottom: 40rpx;
-  margin-top:27rpx;
+  padding-bottom: 20rpx;
+  margin-top:20rpx;
   font-size: 30rpx;
   background-color: #fff;
-  color: #555;
+  color: #333;
+}
+.m-panel__inner{
+  margin-left: 27rpx;
+  padding-right: 27rpx;
+  margin-top: 27rpx;
 }
 .m-panel__title::before{
   width: 6rpx;
   height: 35rpx;
-  margin-top: 4rpx;
   content: "";
   background-color: #2d8cf0;
   position: absolute;
   left: 0;
+  top:0;
+  bottom: 0;
+  margin: auto 0;
 }
 .m-panel__title{
   padding: 20rpx 27rpx;
+  position: relative;
   border-bottom: 1rpx solid #f2f2f2;
 }
+.m-note{
+  font-size: 20rpx;
+  color: #aaa;
+  margin: 20rpx 27rpx 0;
+}
+

@@ -1,0 +1,26 @@
+<!--components/m-textarea/m-textarea.wxml-->
+<!-- <text>components/m-textarea/m-textarea.wxml</text> -->
+<view class='m-textarea m-class'>
+  <textarea 
+    value="{{_value}}"
+    class="m-textarea_input"
+    maxlength="{{maxlength}}"
+    placeholder="{{placeholder}}"
+    fixed='{{fixed}}'
+    focus='{{focus}}'
+    cursor-spacing="{{cursorSpacing}}"
+    disabled="{{disabled}}"
+    bindlinechange="bindlinechange"
+    bindinput="bindinput"
+    bindblur="bindblur"
+    bindfocus="bindfocus"
+    adjust-position="{{adjustPosition}}"
+    
+  />
+  <view
+  class='m-textarea__controll'>
+    
+    <view><text class='m-textarea__controll_length'>{{_length}}</text>/{{maxlength}}</view>
+    <view class='m-textarea__controll_reset' bindtap='bindreset'>清空</view>
+  </view>
+</view>

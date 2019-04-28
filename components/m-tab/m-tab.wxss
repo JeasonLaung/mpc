@@ -16,28 +16,50 @@
   position: relative;
   color: #2d8cf0;
 }
-.m-tab__item-active:before{
+.m-tab__item-active:before,
+.m-tab__item-active:after,
+.m-tab__swiper::before,
+.m-tab__swiper::after{
   content: "";
   position: absolute;
-  left: -35rpx;
   bottom: 0;
   height: 0;
   width: 0;
-  border-right: 20rpx solid #fff;
   border-bottom: 40rpx solid #fff;
   border-top: 40rpx solid transparent;
+}
+.m-tab__item-active:before,
+.m-tab__swiper::before{
+  left: -38rpx;
+  border-right: 20rpx solid #fff;
   border-left: 20rpx solid transparent;
   
 }
-.m-tab__item-active:after{
-  content: "";
-  position: absolute;
-  right: -35rpx;
-  bottom: 0;
-  height: 0;
-  width: 0;
+.m-tab__item-active:after,
+.m-tab__swiper::after{
+  right: -38rpx;
   border-right: 20rpx solid transparent;
-  border-bottom: 40rpx solid #fff;
-  border-top: 40rpx solid transparent;
   border-left: 20rpx solid #fff;
+}
+
+
+
+/* 滑块扩展 */
+.m-tab__item-active--animation{
+  color: #2d8cf0;
+}
+.m-tab{
+  position: relative;
+  z-index: 0;
+}
+.m-tab__item{
+  z-index: 2;
+}
+.m-tab__swiper{
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  height: 80rpx;
+  /* transition: left 0.3s; */
 }

@@ -19,14 +19,45 @@ const tag_list = [
   }
 ]
 Page({
+  handleSubmit(e) {
+    console.log(e)
+
+  },
   handlechange(e) {
     console.log(e)
+    
+  },
+  radiochange(e) {
+    console.log(e)
+    this.setData({
+      rd: e.detail
+    })
+  },
+  checkboxchange(e) {
+    console.log(e)
+    this.setData({
+      cb: e.detail
+    })
   },
   /**
    * 页面的初始数据
    */
   data: {
-    tag_list
+    cb: [],
+    rd:'',
+    tag_list,
+    items: [
+      {
+        name: "我",
+        value: 1
+      }, {
+        name: "弄",
+        value: 2
+      }, {
+        name: "呀",
+        value: 3
+      }
+    ]
   },
 
   /**

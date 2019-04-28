@@ -1,4 +1,26 @@
 <!--components/m-row/m-row.wxml-->
-<view class=''>
+<view 
+class="m-row {{noBorder ? 'm-row-noborder' : ''}}"
+hover-class='m-row-hover'
+hover-stay-time='200'
+wx:if="{{!full}}">
   
+  <view>
+    {{title}}
+  </view>
+
+  <view 
+  class="m-row__last">
+    <view class="m-row__content">
+      <slot />
+    </view>
+    <m-icon wx:if="{{isLink}}" icon="right" m-class='costom-icon'></m-icon>
+    
+  </view>
+</view>
+
+<view 
+wx:else
+class="m-row-full {{noBorder ? 'm-row-noborder' : ''}}">
+  <slot />
 </view>

@@ -4,7 +4,16 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    noBorder: Boolean,
+    title: String,
+    isLink: {
+      type: Boolean,
+      value: false
+    },
+    full: Boolean
+  },
+  options: {
+    multipleSlots: true
   },
 
   /**

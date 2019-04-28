@@ -13,3 +13,8 @@
   background-color: #2d8cf0;
   color: #fff;
 }
+.hidden::before{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}

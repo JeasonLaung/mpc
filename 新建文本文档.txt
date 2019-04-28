@@ -1,0 +1,30 @@
+<!--components/m-tag/m-tag.wxml-->
+<view class="m-tag {{_active ? 'active' : ''}} m-class" wx:if="{{!group}}">
+  <slot></slot>
+</view>
+
+<view wx:else>
+<!-- {{m1.isIncludes(_value,items.value) ? 'active' : ''}} -->
+  <view 
+  bindtap='handlerTap' 
+  wx:for="{{items}}"
+  wx:key="index"
+  class="m-tag  m-class" 
+  data-value="{{item.value}}">
+  {{item.name}}
+  </view>
+  
+</view>
+
+<!-- <wxs module="m1">
+var isIncludes = function (arr,val) {
+  console.log(val)
+  return arr.indexOf(b) ! = -1;
+}
+module.exports.isIncludes = isIncludes;
+</wxs> -->
+<wxs module="m1">
+  var getMax = function(array) { var max = undefined; for (var i = 0; i <
+  array.length; ++i) { max = max === undefined ? array[i] : (max >= array[i] ?
+  max : array[i]); } return max; } module.exports.getMax = getMax;
+</wxs>

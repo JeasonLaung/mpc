@@ -1,1 +1,39 @@
 /* components/m-row/m-row.wxss */
+.m-row{
+  margin-left: 27rpx;
+  padding-right: 27rpx;
+  /* padding-top: 20rpx;
+  padding-bottom: 20rpx; */
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+.m-row-full{
+  margin-left: 27rpx;
+  padding-right: 27rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.m-row-hover{
+  background-color: #f8f8f8;
+  margin-left: 0;
+  padding-left: 27rpx;
+
+}
+.m-row-noborder{
+  border:none;
+}
+.m-row__last{
+  display: flex;
+  max-width:550rpx;
+}
+.m-row__content{
+  overflow:hidden;text-overflow:ellipsis;margin-left:30rpx;
+}
+.costom-icon{
+  font-size: 27rpx;
+  color: #aaa;
+  margin-left: 10rpx;
+}

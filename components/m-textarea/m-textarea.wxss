@@ -1,0 +1,27 @@
+/* components/m-textarea/m-textarea.wxss */
+.m-textarea{
+  /* width: 100%; */
+}
+.m-textarea_input{
+  width: 100%;
+  /* background-color: #ddd; */
+}
+.m-textarea__controll{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  color: #ddd;
+  font-size: 25rpx;
+}
+.m-textarea__controll_length{
+  color: #2d8cf0;
+}
+.m-textarea__controll_reset{
+  color: #2d8cf0;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #2d8cf0;
+}

@@ -1,8 +1,21 @@
 <!--components/m-tab/m-tab.wxml-->
-<view class='m-tab'>
+<!-- <view class='m-tab' wx:if="{{!animation}}">
   <view 
   class="m-tab__item {{index == current ? 'm-tab__item-active' : ''}}"
-  wx:for="{{3}}"
+  wx:for="{{tab_arr}}"
+  wx:key="index"
+  data-index="{{index}}"
+  bindtap="handlerchange">
+    {{item}}
+  </view>
+</view> -->
+
+<view class='m-tab'>
+  <!-- 滑块 -->
+  <view class='m-tab__swiper' style="width:{{750 / tab_arr.length}}rpx;left: {{(750 / tab_arr.length)* current }}rpx; {{animation ? 'transition:left .3s' : ''}}"></view>
+  <view 
+  class="m-tab__item {{index == current ? 'm-tab__item-active--animation' : ''}}"
+  wx:for="{{tab_arr}}"
   wx:key="index"
   data-index="{{index}}"
   bindtap="handlerchange">

@@ -10,7 +10,12 @@ Component({
     title:{
       value: "标题",
       type: String
-    }
+    },
+    note: {
+      value: "",
+      type: String,
+    },
+    inner: Boolean
   },
 
   /**
