@@ -1,6 +1,11 @@
 <!--pages/test/test.wxml-->
 <!-- <text>pages/test/test.wxml</text> -->
 
+<m-panel title="input">
+  <m-row normal no-border>
+    <m-input ext="万" bindinput='handlechange'></m-input>
+  </m-row>
+</m-panel>
 
 <m-panel note="我是一条备注我是一条备注我是一条备注我是一条备注我是一条备注我是一条备注我是一条备注">
   <m-row>123</m-row>

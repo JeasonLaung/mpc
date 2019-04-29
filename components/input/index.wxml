@@ -1,0 +1,15 @@
+<!--components/input/index.wxml-->
+<!-- <text>components/input/index.wxml</text> -->
+<view class='m-input {{_active?"m-input-active":""}}' >
+  <input 
+  bindinput="bindinput" 
+  cursor-spacing='20'
+  placeholder="{{placeholder}}"
+  maxlength="{{maxlength}}"
+  bindfocus='bindfocus'
+  bindconfirm='bindconfirm'
+  bindblur='bindblur'
+  confirm-type='{{confirmType}}'
+  ></input>
+  <view class='m-input-ext'>{{ext}}</view>
+</view>

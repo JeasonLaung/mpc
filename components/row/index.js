@@ -10,7 +10,8 @@ Component({
       type: Boolean,
       value: false
     },
-    full: Boolean
+    full: Boolean,
+    normal: Boolean
   },
   options: {
     multipleSlots: true

@@ -23,12 +23,13 @@
     ]
   },
   "usingComponents": {
-    "m-panel": "components/m-panel/m-panel",
-    "m-tab": "components/m-tab/m-tab",
-    "m-tag": "components/m-tag/m-tag",
-    "m-textarea": "components/m-textarea/m-textarea",
-    "m-row": "components/m-row/m-row",
-    "m-icon": "components/m-icon/index"
+    "m-panel": "components/panel/index",
+    "m-tab": "components/tab/index",
+    "m-tag": "components/tag/index",
+    "m-textarea": "components/textarea/index",
+    "m-row": "components/row/index",
+    "m-icon": "components/icon/index",
+    "m-input": "components/input/index"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -3,7 +3,7 @@
 class="m-row {{noBorder ? 'm-row-noborder' : ''}}"
 hover-class='m-row-hover'
 hover-stay-time='200'
-wx:if="{{!full}}">
+wx:if="{{!full && !normal}}">
   
   <view>
     {{title}}
@@ -20,7 +20,14 @@ wx:if="{{!full}}">
 </view>
 
 <view 
-wx:else
+wx:if="{{full}}"
 class="m-row-full {{noBorder ? 'm-row-noborder' : ''}}">
+  <slot />
+</view>
+
+<view
+wx:if="{{normal}}"
+style='margin-left:27rpx;margin-right:27rpx;padding: 20rpx 0'
+>
   <slot />
 </view>
