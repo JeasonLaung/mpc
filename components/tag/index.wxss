@@ -9,6 +9,9 @@
   border-radius: 30rpx;
 
 }
+.m-tag + .m-tag {
+  margin-left: 20rpx;
+}
 .m-tag.active{
   background-color: #2d8cf0;
   color: #fff;

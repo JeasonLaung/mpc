@@ -1,6 +1,8 @@
 <!--pages/test/test.wxml-->
 <!-- <text>pages/test/test.wxml</text> -->
-
+<m-picker mode="city">
+  
+</m-picker>
 <m-panel title="input">
   <m-row normal no-border>
     <m-input ext="万" bindinput='handlechange'></m-input>

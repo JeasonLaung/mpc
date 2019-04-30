@@ -1,0 +1,18 @@
+<!--components/picker/index.wxml-->
+<!-- <text>components/picker/index.wxml</text> -->
+<!-- <picker>
+  <m-row is-link mode="city">
+  </m-row>
+
+</picker> -->
+
+<picker 
+mode="multiSelector" 
+range="{{pickerCity}}" 
+range-key="name" 
+bindcolumnchange="handlerColumnChange" bindchange="handlerCityChange"
+wx:if="{{mode=='city'}}"
+>
+  <m-row is-link placeholder="{{placeholder}}" content="{{_content}}" title="{{title}}"/>
+</picker>
+

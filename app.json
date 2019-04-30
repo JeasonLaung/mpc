@@ -29,7 +29,8 @@
     "m-textarea": "components/textarea/index",
     "m-row": "components/row/index",
     "m-icon": "components/icon/index",
-    "m-input": "components/input/index"
+    "m-input": "components/input/index",
+    "m-picker": "components/picker/index"
   },
   "sitemapLocation": "sitemap.json"
 }
