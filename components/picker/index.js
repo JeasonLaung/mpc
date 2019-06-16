@@ -13,13 +13,6 @@ Component({
     title:{
       type: String,
       value: ""
-<<<<<<< HEAD
-    },
-    content:{
-      type:String,
-      value:""
-=======
->>>>>>> 6ee0df8dd8d628b53c43fd704b2ecbdb64a470ef
     }
   },
 
@@ -32,15 +25,8 @@ Component({
   },
   attached() {
     let pickerCity = [city,[]]
-<<<<<<< HEAD
-    let _content = this.data.content || ""
-    this.setData({
-      pickerCity,
-      _content
-=======
     this.setData({
       pickerCity
->>>>>>> 6ee0df8dd8d628b53c43fd704b2ecbdb64a470ef
     })
   },
   /**
@@ -73,18 +59,10 @@ Component({
       value = [_province, _city]
       let _city_name, _province_name, _city_id, _province_id
       if (_province + _city <= 0) {
-<<<<<<< HEAD
-        this.setData({
-          _content: ""
-        })
-        this.triggerEvent('change', { value,name:["所有", "所有"]})
-        
-=======
         this.triggerEvent('change', { value,name:["所有", "所有"]})
         this.setData({
           _content: ""
         })
->>>>>>> 6ee0df8dd8d628b53c43fd704b2ecbdb64a470ef
       }
       else {
         _city_name = city[_province]['cities'][_city]['name']

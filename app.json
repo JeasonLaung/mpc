@@ -33,12 +33,9 @@
     "m-row": "components/row/index",
     "m-icon": "components/icon/index",
     "m-input": "components/input/index",
-<<<<<<< HEAD
     "m-photo": "components/photo/index",
-    "m-load": "components/load/index"
-=======
+    "m-load": "components/load/index",
     "m-picker": "components/picker/index"
->>>>>>> 6ee0df8dd8d628b53c43fd704b2ecbdb64a470ef
   },
   "sitemapLocation": "sitemap.json"
 }
