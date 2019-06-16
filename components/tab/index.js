@@ -13,6 +13,10 @@ Component({
       type:Boolean,
       value:false
     },
+    value:{
+      type:[String,Number],
+      value:0
+    }
   },
   /**
    * 组件的初始数据
@@ -20,7 +24,11 @@ Component({
   data: {
     current: 0
   },
-
+  attached() {
+    this.setData({
+      current:this.data.value
+    })
+  },
   /**
    * 组件的方法列表
    */
@@ -35,10 +43,6 @@ Component({
       })
       this.triggerEvent('change', current)
 
-      // 扩展
-      if (this.data.animation) {
-        
-      }
     }
   }
 })

@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/test2/index",
+    "pages/custom/index",
     "pages/test/test",
+    "pages/bb",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -29,7 +32,9 @@
     "m-textarea": "components/textarea/index",
     "m-row": "components/row/index",
     "m-icon": "components/icon/index",
-    "m-input": "components/input/index"
+    "m-input": "components/input/index",
+    "m-photo": "components/photo/index",
+    "m-load": "components/load/index"
   },
   "sitemapLocation": "sitemap.json"
 }

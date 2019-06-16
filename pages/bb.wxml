@@ -1,6 +1,7 @@
 <!--pages/bb.wxml-->
-<form report-submit bindsubmit="handleSubmit">
+<!-- <form report-submit bindsubmit="handleSubmit">
 <button class='bb-button'>
 <slot></slot>
 </button>
-</form>
+</form> -->
+<navigator url='/pages/custom/index'>我要去</navigator>

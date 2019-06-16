@@ -10,14 +10,20 @@ Component({
       type:String,
       value:20
     },
-    confirmType:String
+    confirmType:String,
+    value:String
   },
-
+  attached() {
+    this.setData({
+      _value: this.data.value || ""
+    })
+  },
   /**
    * 组件的初始数据
    */
   data: {
-    _active: false
+    _active: false,
+    _value: ""
   },
 
   /**

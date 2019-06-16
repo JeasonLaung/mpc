@@ -6,12 +6,15 @@ Component({
   properties: {
     noBorder: Boolean,
     title: String,
+    content:String,
     isLink: {
       type: Boolean,
       value: false
     },
     full: Boolean,
-    normal: Boolean
+    normal: Boolean,
+    center:Boolean,
+    border:Boolean
   },
   options: {
     multipleSlots: true

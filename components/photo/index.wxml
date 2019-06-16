@@ -1,0 +1,8 @@
+<!--components/photo/index.wxml-->
+<!-- <text>components/photo/index.wxml</text> -->
+
+<view class='photo'>
+<view class='add-photo' wx:for="{{6}}"></view>
+<view class='add-photo'>+</view>
+
+</view>

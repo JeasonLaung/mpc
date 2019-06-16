@@ -1,0 +1,17 @@
+<!--pages/test2/index.wxml-->
+<view
+style='height:200rpx;background:#f2f2f2'>
+</view>
+<m-load
+id="load"
+height="calc(100vh - 200rpx)"
+custom
+bindnew="bindnew"
+bindmore="bindmore">
+  <view 
+  class='demo-list'
+  wx:for="{{20}}"
+  wx:key="index">
+    我是一个list
+  </view>
+</m-load>

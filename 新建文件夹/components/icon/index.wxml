@@ -1,0 +1,3 @@
+<!--components/m-icon/index.wxml-->
+<!-- <text>components/m-icon/index.wxml</text> -->
+<icon class="iconfont icon-{{icon}} m-class"></icon>

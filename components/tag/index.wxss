@@ -7,7 +7,6 @@
   line-height: 60rpx;
   display: inline-block;
   border-radius: 30rpx;
-
 }
 .m-tag.active{
   background-color: #2d8cf0;

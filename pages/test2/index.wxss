@@ -1,0 +1,10 @@
+/* pages/test2/index.wxss */
+.demo-list{
+  height: 80rpx;
+  border-bottom: 1rpx solid #aaa;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+}
+.demo-list:first-child{
+  border-top: 1rpx solid #aaa;
+}

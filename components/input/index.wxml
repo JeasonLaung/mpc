@@ -10,6 +10,7 @@
   bindconfirm='bindconfirm'
   bindblur='bindblur'
   confirm-type='{{confirmType}}'
+  value="{{_value}}"
   ></input>
   <view class='m-input-ext'>{{ext}}</view>
 </view>

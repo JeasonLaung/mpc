@@ -1,0 +1,48 @@
+/* components/load/index.wxss */
+@import '../../icon.wxss';
+.m-load-new,.m-load-more{
+  /* background: #eee; */
+  display: flex;
+  font-size: 27rpx;
+  color:#aaa;
+  align-items: flex-end;
+  justify-content: center;
+}
+.iconfont.loading{
+  animation: loading 1s infinite;
+}
+.icon-loading{
+  margin-right: 20rpx;
+  color: #40b1d2
+}
+.m-load-new-container{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.m-load-empty{
+  font-size: 27rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #aaa;
+}
+.icon-empty{
+  font-size: 200rpx;
+  margin-bottom: 30rpx;
+}
+.m-load-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@keyframes loading{
+  from{
+    transform: rotate(0)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}

@@ -1,0 +1,66 @@
+<!--components/load/index.wxml-->
+<scroll-view
+id="m-load"
+bindscroll="bindscroll"
+bindscrolltolower="bindscrolltolower"
+bindscrolltoupper="bindscrolltoupper"
+upper-threshold="{{pullDistance + 20}}"
+lower-threshold="{{pullDistance + 20}}"
+enable-back-to-top
+scroll-with-animation	
+scroll-into-view="{{scrollIntoView}}"
+scroll-top="{{scrollTop}}"
+scroll-y
+style='height:{{height}}'
+bindtouchstart='bindtouchstart'
+bindtouchend='bindtouchend'>
+  <!-- 刷新 -->
+  <view 
+  wx:if="{{!simple}}"
+  class='m-load-new-container'
+  style='height:{{pullDistance}}px;line-height:{{pullDistance}}px;'
+  >
+    <view
+    id='m-load-new'
+    class='m-load-new'
+    style='line-height: {{pullRefreshDistance}}px'
+    >
+      <view class='m-load-new-icon'>
+        <icon class='iconfont icon-loading  {{loading ? "loading" : ""}}'></icon>
+      </view>
+    {{!loading ? '下拉刷新' : '正在刷新'}}
+    </view>
+  </view>
+  
+  <!-- 主内容 -->
+  <scroll-view 
+  scroll-y
+  id="m-load-container" style='min-height: {{height}}'
+  wx:if="{{!empty}}"
+  >
+    <slot />
+  </scroll-view>
+  <view
+  wx:else
+  id="m-load-container"
+  class='m-load-empty'
+  style='min-height: {{height}}'>
+    <view>
+      <icon class='iconfont icon-empty'></icon>
+    </view>
+    空空如也~~
+
+  </view>
+
+  <!-- 加载更多 -->
+  <view 
+  wx:if="{{!empty}}"
+  id='m-load-more'
+  style='height:{{pullRefreshDistance}}px;line-height:{{pullRefreshDistance}}px;'
+  class='m-load-more'>
+    <view class='m-load-new-icon' wx:if="{{!noMore}}">
+      <icon class='iconfont icon-loading loading'></icon>
+    </view>
+    {{!noMore ? '加载更多' : '到底了'}}
+  </view>
+</scroll-view>

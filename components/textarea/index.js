@@ -30,9 +30,20 @@ Component({
     cursorSpacing: {
       type: [String, Number],
       value: ''
+    },
+    value:{
+      type:String,
+      value:''
     }
   },
+  attached () {
+    let _value = this.data.value
+    console.log(this.data.value)
 
+    this.setData({
+      _value
+    })
+  },
   /**
    * 组件的初始数据
    */

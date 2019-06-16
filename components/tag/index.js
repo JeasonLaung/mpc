@@ -12,6 +12,9 @@ Component({
     //   type: String,
     //   value: ""
     // },
+    // defaultCheckbox:Array,
+    // defaultRadio:String,
+
     items:{
       type:Array,
       value:[
@@ -26,6 +29,11 @@ Component({
           value: 3
         }
       ]
+    },
+
+    value: {
+      type:[Array,String],
+      value:''
     }
   },
 
@@ -38,8 +46,18 @@ Component({
     _radio: '',
   },
   attached() {
+    // console.log(this.data.defaultCheckbox)
+    if(this.data.type == 'checkbox') {
+      if(!(this.data.value instanceof Array)) {
+        this.data.value = this.data.value ? this.data.value.split(',') : []
+      }
+    }
+    
     this.setData({
       _active: this.data.active,
+      // _value: this.data.value
+      _radio: this.data.value || '',
+      _value: this.data.value || [],
     })
   },
   /**

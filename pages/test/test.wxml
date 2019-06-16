@@ -1,5 +1,11 @@
 <!--pages/test/test.wxml-->
 <!-- <text>pages/test/test.wxml</text> -->
+<m-panel title="photo background">
+<m-row normal>
+  <m-photo/>
+</m-row>
+</m-panel>
+
 
 <m-panel title="input">
   <m-row normal no-border>
@@ -49,7 +55,9 @@
     placeholder='你好'
     maxlength="150"
     cursor-spacing='50'
+    value="123465798"
     ></m-textarea>
   </m-row>
   
 </m-panel>
+

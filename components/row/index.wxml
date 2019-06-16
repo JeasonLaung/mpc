@@ -3,7 +3,7 @@
 class="m-row {{noBorder ? 'm-row-noborder' : ''}}"
 hover-class='m-row-hover'
 hover-stay-time='200'
-wx:if="{{!full && !normal}}">
+wx:if="{{!full && !normal && !center}}">
   
   <view>
     {{title}}
@@ -12,7 +12,7 @@ wx:if="{{!full && !normal}}">
   <view 
   class="m-row__last">
     <view class="m-row__content">
-      <slot />
+      {{content}}
     </view>
     <m-icon wx:if="{{isLink}}" icon="right" m-class='costom-icon'></m-icon>
     
@@ -27,7 +27,14 @@ class="m-row-full {{noBorder ? 'm-row-noborder' : ''}}">
 
 <view
 wx:if="{{normal}}"
-style='margin-left:27rpx;margin-right:27rpx;padding: 20rpx 0'
+style='margin-left:27rpx;margin-right:27rpx;padding: 20rpx 0;{{border? "border-bottom: 1rpx solid #f2f2f2;" :""}}'
+>
+  <slot />
+</view>
+
+<view
+wx:if="{{center}}"
+style='margin-left:27rpx;margin-right:27rpx;padding: 20rpx 0;display:flex;justify-content:center;'
 >
   <slot />
 </view>

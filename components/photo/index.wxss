@@ -1,0 +1,23 @@
+/* components/photo/index.wxss */
+.photo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.add-photo{
+  height: 210rpx;
+  width: 210rpx;
+  background-color: #ddd;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 100rpx;
+  line-height: 210rpx;
+  text-align: center;
+  border:1rpx solid #aaa; 
+  margin-right: 25rpx;
+  margin-bottom: 20rpx;
+}
+.add-photo:nth-child(3n){
+  margin-right: 0;
+}

@@ -1,0 +1,34 @@
+<!--components/m-tag/m-tag.wxml-->
+<view class="m-tag {{_active ? 'active' : ''}} m-class" wx:if="{{!type}}">
+  <slot></slot>
+</view>
+
+<view wx:if="{{type == 'checkbox'}}">
+<!-- {{m1.isIncludes(_value,items.value) ? 'active' : ''}} -->
+  <view 
+  bindtap='handlerCheckboxTap' 
+  wx:for="{{items}}"
+  wx:key="index"
+  class="m-tag {{m1.isIncludes(_value,item.value) ? 'active' : ''}} m-class" 
+  data-value="{{item.value}}">
+  {{item.name}}
+  </view>
+</view>
+
+<wxs module="m1">
+function isIncludes(arr,val){
+  return arr.indexOf(val) != -1;
+}
+module.exports.isIncludes = isIncludes;
+</wxs>
+
+<view wx:if="{{type == 'radio'}}">
+  <view 
+  bindtap='handlerRadioTap' 
+  wx:for="{{items}}"
+  wx:key="index"
+  class="m-tag {{ item.value == _radio ? 'active' : ''}} m-class" 
+  data-value="{{item.value}}">
+  {{item.name}}
+  </view>
+</view>
