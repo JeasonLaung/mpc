@@ -1,0 +1,15 @@
+
+<i-button bind:click="toggleBottom" type="primary">下方</i-button>
+
+<i-drawer mode="bottom" visible="{{showBottom}}" bind:close="toggleBottom">
+    <view class="demo-container">
+        单击遮罩层关闭
+        <button>
+          下载
+        </button>
+        <!-- <i-button>
+          <i-icon type="fullscreen" />
+          下载
+        </i-button> -->
+    </view>
+</i-drawer>

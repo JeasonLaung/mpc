@@ -1,0 +1,5 @@
+/* pages/test3/index.wxss */
+.demo-container{
+  background: #fff;
+  width: 100vw;
+}
